@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>練習短文朗讀與單字高亮</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .sentence-container {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .english {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .english span.word {
+      color: black;
+      transition: color 0.2s;
+    }
+    .chinese {
+      font-size: 16px;
+      color: #555;
+      margin-left: 10px;
+    }
+    .story-title {
+      font-size: 20px;
+      margin: 30px 0 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>故事朗讀練習</h1>
+
+  <!-- Story 1: A Hero for Education -->
+  <div class="story-title">Story 1: A Hero for Education</div>
+
+  <!-- Sentence 1 -->
+  <div class="sentence-container" data-text="Malala Yousafzai is a young woman from Pakistan who is known as a hero for her work in education.">
+    <div class="english">
+      <span class="word">Malala</span> 
+      <span class="word">Yousafzai</span> 
+      <span class="word">is</span> 
+      <span class="word">a</span> 
+      <span class="word">young</span> 
+      <span class="word">woman</span> 
+      <span class="word">from</span> 
+      <span class="word">Pakistan</span> 
+      <span class="word">who</span> 
+      <span class="word">is</span> 
+      <span class="word">known</span> 
+      <span class="word">as</span> 
+      <span class="word">a</span> 
+      <span class="word">hero</span> 
+      <span class="word">for</span> 
+      <span class="word">her</span> 
+      <span class="word">work</span> 
+      <span class="word">in</span> 
+      <span class="word">education.</span>
+    </div>
+    <div class="chinese">馬拉拉·優薩福扎伊是一位來自巴基斯坦的年輕女性，以她在教育方面的工作而被譽為英雄。</div>
+  </div>
+
+  <!-- Sentence 2 -->
+  <div class="sentence-container" data-text="She believes strongly in the power of learning and wants every child, especially girls, to go to school.">
+    <div class="english">
+      <span class="word">She</span> 
+      <span class="word">believes</span> 
+      <span class="word">strongly</span> 
+      <span class="word">in</span> 
+      <span class="word">the</span> 
+      <span class="word">power</span> 
+      <span class="word">of</span> 
+      <span class="word">learning</span> 
+      <span class="word">and</span> 
+      <span class="word">wants</span> 
+      <span class="word">every</span> 
+      <span class="word">child,</span> 
+      <span class="word">especially</span> 
+      <span class="word">girls,</span> 
+      <span class="word">to</span> 
+      <span class="word">go</span> 
+      <span class="word">to</span> 
+      <span class="word">school.</span>
+    </div>
+    <div class="chinese">她堅信學習的力量，並希望每個孩子，特別是女孩，都能接受教育。</div>
+  </div>
+
+  <!-- Sentence 3 -->
+  <div class="sentence-container" data-text="When she was a child, some people in her town said that girls should not go to school.">
+    <div class="english">
+      <span class="word">When</span> 
+      <span class="word">she</span> 
+      <span class="word">was</span> 
+      <span class="word">a</span> 
+      <span class="word">child,</span> 
+      <span class="word">some</span> 
+      <span class="word">people</span> 
+      <span class="word">in</span> 
+      <span class="word">her</span> 
+      <span class="word">town</span> 
+      <span class="word">said</span> 
+      <span class="word">that</span> 
+      <span class="word">girls</span> 
+      <span class="word">should</span> 
+      <span class="word">not</span> 
+      <span class="word">go</span> 
+      <span class="word">to</span> 
+      <span class="word">school.</span>
+    </div>
+    <div class="chinese">當她還是個孩子時，鎮上的一些人認為女孩不應該上學。</div>
+  </div>
+
+  <!-- Sentence 4 -->
+  <div class="sentence-container" data-text="But Malala and her family did not agree.">
+    <div class="english">
+      <span class="word">But</span> 
+      <span class="word">Malala</span> 
+      <span class="word">and</span> 
+      <span class="word">her</span> 
+      <span class="word">family</span> 
+      <span class="word">did</span> 
+      <span class="word">not</span> 
+      <span class="word">agree.</span>
+    </div>
+    <div class="chinese">但馬拉拉和她的家人不同意。</div>
+  </div>
+
+  <!-- Sentence 5 -->
+  <div class="sentence-container" data-text="She spoke up for education and wanted to make a difference in her community.">
+    <div class="english">
+      <span class="word">She</span> 
+      <span class="word">spoke</span> 
+      <span class="word">up</span> 
+      <span class="word">for</span> 
+      <span class="word">education</span> 
+      <span class="word">and</span> 
+      <span class="word">wanted</span> 
+      <span class="word">to</span> 
+      <span class="word">make</span> 
+      <span class="word">a</span> 
+      <span class="word">difference</span> 
+      <span class="word">in</span> 
+      <span class="word">her</span> 
+      <span class="word">community.</span>
+    </div>
+    <div class="chinese">她為教育發聲，並希望為社區帶來改變。</div>
+  </div>
+
+  <!-- Sentence 6 -->
+  <div class="sentence-container" data-text="When Malala was just 15 years old, she was hurt very badly by people who did not want her to speak.">
+    <div class="english">
+      <span class="word">When</span> 
+      <span class="word">Malala</span> 
+      <span class="word">was</span> 
+      <span class="word">just</span> 
+      <span class="word">15</span> 
+      <span class="word">years</span> 
+      <span class="word">old,</span> 
+      <span class="word">she</span> 
+      <span class="word">was</span> 
+      <span class="word">hurt</span> 
+      <span class="word">very</span> 
+      <span class="word">badly</span> 
+      <span class="word">by</span> 
+      <span class="word">people</span> 
+      <span class="word">who</span> 
+      <span class="word">did</span> 
+      <span class="word">not</span> 
+      <span class="word">want</span> 
+      <span class="word">her</span> 
+      <span class="word">to</span> 
+      <span class="word">speak.</span>
+    </div>
+    <div class="chinese">當馬拉拉僅15歲時，一些不希望她發聲的人對她造成了嚴重傷害。</div>
+  </div>
+
+  <!-- Sentence 7 -->
+  <div class="sentence-container" data-text="But she was strong. She recovered and continued her fight for Quality Education and Gender Equality.">
+    <div class="english">
+      <span class="word">But</span> 
+      <span class="word">she</span> 
+      <span class="word">was</span> 
+      <span class="word">strong.</span> 
+      <span class="word">She</span> 
+      <span class="word">recovered</span> 
+      <span class="word">and</span> 
+      <span class="word">continued</span> 
+      <span class="word">her</span> 
+      <span class="word">fight</span> 
+      <span class="word">for</span> 
+      <span class="word">Quality</span> 
+      <span class="word">Education</span> 
+      <span class="word">and</span> 
+      <span class="word">Gender</span> 
+      <span class="word">Equality.</span>
+    </div>
+    <div class="chinese">但她很堅強，康復後繼續為優質教育和性別平等而奮鬥。</div>
+  </div>
+
+  <!-- Sentence 8 -->
+  <div class="sentence-container" data-text="She believes that every girl should have the chance to learn and grow.">
+    <div class="english">
+      <span class="word">She</span> 
+      <span class="word">believes</span> 
+      <span class="word">that</span> 
+      <span class="word">every</span> 
+      <span class="word">girl</span> 
+      <span class="word">should</span> 
+      <span class="word">have</span> 
+      <span class="word">the</span> 
+      <span class="word">chance</span> 
+      <span class="word">to</span> 
+      <span class="word">learn</span> 
+      <span class="word">and</span> 
+      <span class="word">grow.</span>
+    </div>
+    <div class="chinese">她相信每個女孩都應該有學習和成長的機會。</div>
+  </div>
+
+  <!-- Sentence 9 -->
+  <div class="sentence-container" data-text="In 2014, Malala received the Nobel Peace Prize.">
+    <div class="english">
+      <span class="word">In</span> 
+      <span class="word">2014,</span> 
+      <span class="word">Malala</span> 
+      <span class="word">received</span> 
+      <span class="word">the</span> 
+      <span class="word">Nobel</span> 
+      <span class="word">Peace</span> 
+      <span class="word">Prize.</span>
+    </div>
+    <div class="chinese">2014年，馬拉拉獲得了諾貝爾和平獎。</div>
+  </div>
+
+  <!-- Sentence 10 -->
+  <div class="sentence-container" data-text="She was only 17, the youngest person to ever win this prize.">
+    <div class="english">
+      <span class="word">She</span> 
+      <span class="word">was</span> 
+      <span class="word">only</span> 
+      <span class="word">17,</span> 
+      <span class="word">the</span> 
+      <span class="word">youngest</span> 
+      <span class="word">person</span> 
+      <span class="word">to</span> 
+      <span class="word">ever</span> 
+      <span class="word">win</span> 
+      <span class="word">this</span> 
+      <span class="word">prize.</span>
+    </div>
+    <div class="chinese">她當時只有17歲，是獲得此獎項最年輕的人。</div>
+  </div>
+
+  <!-- Sentence 11 -->
+  <div class="sentence-container" data-text="She was honored because of her courage and her work for Quality Education for all children.">
+    <div class="english">
+      <span class="word">She</span> 
+      <span class="word">was</span> 
+      <span class="word">honored</span> 
+      <span class="word">because</span> 
+      <span class="word">of</span> 
+      <span class="word">her</span> 
+      <span class="word">courage</span> 
+      <span class="word">and</span> 
+      <span class="word">her</span> 
+      <span class="word">work</span> 
+      <span class="word">for</span> 
+      <span class="word">Quality</span> 
+      <span class="word">Education</span> 
+      <span class="word">for</span> 
+      <span class="word">all</span> 
+      <span class="word">children.</span>
+    </div>
+    <div class="chinese">她因為勇氣和為所有孩子爭取優質教育的工作而受到表彰。</div>
+  </div>
+
+  <!-- Sentence 12 -->
+  <div class="sentence-container" data-text="Malala's work is also connected to the Sustainable Development Goals by the world, and goal number four is about Quality Education.">
+    <div class="english">
+      <span class="word">Malala's</span> 
+      <span class="word">work</span> 
+      <span class="word">is</span> 
+      <span class="word">also</span> 
+      <span class="word">connected</span> 
+      <span class="word">to</span> 
+      <span class="word">the</span> 
+      <span class="word">Sustainable</span> 
+      <span class="word">Development</span> 
+      <span class="word">Goals</span> 
+      <span class="word">by</span> 
+      <span class="word">the</span> 
+      <span class="word">world,</span> 
+      <span class="word">and</span> 
+      <span class="word">goal</span> 
+      <span class="word">number</span> 
+      <span class="word">four</span> 
+      <span class="word">is</span> 
+      <span class="word">about</span> 
+      <span class="word">Quality</span> 
+      <span class="word">Education.</span>
+    </div>
+    <div class="chinese">馬拉拉的工作也與全球的可持續發展目標相連，其中第四個目標是關於優質教育。</div>
+  </div>
+
+  <!-- Sentence 13 -->
+  <div class="sentence-container" data-text="Malala is a role model for many people, and her story shows us that one person can make a big difference.">
+    <div class="english">
+      <span class="word">Malala</span> 
+      <span class="word">is</span> 
+      <span class="word">a</span> 
+      <span class="word">role</span> 
+      <span class="word">model</span> 
+      <span class="word">for</span> 
+      <span class="word">many</span> 
+      <span class="word">people,</span> 
+      <span class="word">and</span> 
+      <span class="word">her</span> 
+      <span class="word">story</span> 
+      <span class="word">shows</span> 
+      <span class="word">us</span> 
+      <span class="word">that</span> 
+      <span class="word">one</span> 
+      <span class="word">person</span> 
+      <span class="word">can</span> 
+      <span class="word">make</span> 
+      <span class="word">a</span> 
+      <span class="word">big</span> 
+      <span class="word">difference.</span>
+    </div>
+    <div class="chinese">馬拉拉是許多人的榜樣，她的故事告訴我們一個人也能帶來巨大改變。</div>
+  </div>
+
+  <!-- Sentence 14 -->
+  <div class="sentence-container" data-text="Malala continues to inspire people with her story and her efforts to bring education to all children.">
+    <div class="english">
+      <span class="word">Malala</span> 
+      <span class="word">continues</span> 
+      <span class="word">to</span> 
+      <span class="word">inspire</span> 
+      <span class="word">people</span> 
+      <span class="word">with</span> 
+      <span class="word">her</span> 
+      <span class="word">story</span> 
+      <span class="word">and</span> 
+      <span class="word">her</span> 
+      <span class="word">efforts</span> 
+      <span class="word">to</span> 
+      <span class="word">bring</span> 
+      <span class="word">education</span> 
+      <span class="word">to</span> 
+      <span class="word">all</span> 
+      <span class="word">children.</span>
+    </div>
+    <div class="chinese">馬拉拉持續以她的故事和努力啟發人們，讓所有孩子都能接受教育。</div>
+  </div>
+
+  <!-- Sentence 15 -->
+  <div class="sentence-container" data-text="She shows that with courage and determination, we can work towards a better world with Gender Equality and opportunities for everyone to learn and grow.">
+    <div class="english">
+      <span class="word">She</span> 
+      <span class="word">shows</span> 
+      <span class="word">that</span> 
+      <span class="word">with</span> 
+      <span class="word">courage</span> 
+      <span class="word">and</span> 
+      <span class="word">determination,</span> 
+      <span class="word">we</span> 
+      <span class="word">can</span> 
+      <span class="word">work</span> 
+      <span class="word">towards</span> 
+      <span class="word">a</span> 
+      <span class="word">better</span> 
+      <span class="word">world</span> 
+      <span class="word">with</span> 
+      <span class="word">Gender</span> 
+      <span class="word">Equality</span> 
+      <span class="word">and</span> 
+      <span class="word">opportunities</span> 
+      <span class="word">for</span> 
+      <span class="word">everyone</span> 
+      <span class="word">to</span> 
+      <span class="word">learn</span> 
+      <span class="word">and</span> 
+      <span class="word">grow.</span>
+    </div>
+    <div class="chinese">她展示了憑藉勇氣和決心，我們可以邁向一個性別平等且每個人都有學習和成長機會的更美好世界。</div>
+  </div>
+
+  <!-- Sentence 16 -->
+  <div class="sentence-container" data-text="Malala Yousafzai is truly a hero of our time.">
+    <div class="english">
+      <span class="word">Malala</span> 
+      <span class="word">Yousafzai</span> 
+      <span class="word">is</span> 
+      <span class="word">truly</span> 
+      <span class="word">a</span> 
+      <span class="word">hero</span> 
+      <span class="word">of</span> 
+      <span class="word">our</span> 
+      <span class="word">time.</span>
+    </div>
+    <div class="chinese">馬拉拉·優薩福扎伊真的是我們這個時代的英雄。</div>
+  </div>
+
+  <!-- Story 2: Respecting Different Cultures -->
+  <div class="story-title">Story 2: Respecting Different Cultures</div>
+
+  <!-- Sentence 1 -->
+  <div class="sentence-container" data-text="One day at school, Isaka and his friend Thomas were sitting in the lunchroom.">
+    <div class="english">
+      <span class="word">One</span> 
+      <span class="word">day</span> 
+      <span class="word">at</span> 
+      <span class="word">school,</span> 
+      <span class="word">Isaka</span> 
+      <span class="word">and</span> 
+      <span class="word">his</span> 
+      <span class="word">friend</span> 
+      <span class="word">Thomas</span> 
+      <span class="word">were</span> 
+      <span class="word">sitting</span> 
+      <span class="word">in</span> 
+      <span class="word">the</span> 
+      <span class="word">lunchroom.</span>
+    </div>
+    <div class="chinese">一天在學校，Isaka和他的朋友Thomas正在午餐室裡坐著。</div>
+  </div>
+
+  <!-- Sentence 2 -->
+  <div class="sentence-container" data-text="Isaka had brought some delicious food from home, and it looked different from the sandwiches Thomas usually ate.">
+    <div class="english">
+      <span class="word">Isaka</span> 
+      <span class="word">had</span> 
+      <span class="word">brought</span> 
+      <span class="word">some</span> 
+      <span class="word">delicious</span> 
+      <span class="word">food</span> 
+      <span class="word">from</span> 
+      <span class="word">home,</span> 
+      <span class="word">and</span> 
+      <span class="word">it</span> 
+      <span class="word">looked</span> 
+      <span class="word">different</span> 
+      <span class="word">from</span> 
+      <span class="word">the</span> 
+      <span class="word">sandwiches</span> 
+      <span class="word">Thomas</span> 
+      <span class="word">usually</span> 
+      <span class="word">ate.</span>
+    </div>
+    <div class="chinese">Isaka從家裡帶來了一些美味的食物，與Thomas平常吃的三明治不同。</div>
+  </div>
+
+  <!-- Sentence 3 -->
+  <div class="sentence-container" data-text="\"What's that, Isaka?\" Thomas asked, curious.">
+    <div class="english">
+      <span class="word">"What's</span> 
+      <span class="word">that,</span> 
+      <span class="word">Isaka?"</span> 
+      <span class="word">Thomas</span> 
+      <span class="word">asked,</span> 
+      <span class="word">curious.</span>
+    </div>
+    <div class="chinese">Thomas好奇地問道：「那是什麼，Isaka？」</div>
+  </div>
+
+  <!-- Sentence 4 -->
+  <div class="sentence-container" data-text="Isaka smiled and said, \"This is called sushi. It's a traditional food from Japan.\"">
+    <div class="english">
+      <span class="word">Isaka</span> 
+      <span class="word">smiled</span> 
+      <span class="word">and</span> 
+      <span class="word">said,</span> 
+      <span class="word">"This</span> 
+      <span class="word">is</span> 
+      <span class="word">called</span> 
+      <span class="word">sushi.</span> 
+      <span class="word">It's</span> 
+      <span class="word">a</span> 
+      <span class="word">traditional</span> 
+      <span class="word">food</span> 
+      <span class="word">from</span> 
+      <span class="word">Japan."</span>
+    </div>
+    <div class="chinese">Isaka微笑著說：「這叫做壽司，是日本的傳統食品。」</div>
+  </div>
+
+  <!-- Sentence 5 -->
+  <div class="sentence-container" data-text="My family eats it for special occasions.">
+    <div class="english">
+      <span class="word">My</span> 
+      <span class="word">family</span> 
+      <span class="word">eats</span> 
+      <span class="word">it</span> 
+      <span class="word">for</span> 
+      <span class="word">special</span> 
+      <span class="word">occasions.</span>
+    </div>
+    <div class="chinese">我的家人在特別的場合會吃它。</div>
+  </div>
+
+  <!-- Sentence 6 -->
+  <div class="sentence-container" data-text="Thomas's eyes widened. \"Wow, it looks so interesting! What's inside?\"">
+    <div class="english">
+      <span class="word">Thomas's</span> 
+      <span class="word">eyes</span> 
+      <span class="word">widened.</span> 
+      <span class="word">"Wow,</span> 
+      <span class="word">it</span> 
+      <span class="word">looks</span> 
+      <span class="word">so</span> 
+      <span class="word">interesting!</span> 
+      <span class="word">What's</span> 
+      <span class="word">inside?"</span>
+    </div>
+    <div class="chinese">Thomas眼睛睜大了：「哇，看起來真有趣！裡面有什麼？」</div>
+  </div>
+
+  <!-- Sentence 7 -->
+  <div class="sentence-container" data-text="Isaka explained, \"It's made with rice, fish, and sometimes vegetables, all wrapped in seaweed. My mom taught me how to make it. Would you like to try some?\"">
+    <div class="english">
+      <span class="word">Isaka</span> 
+      <span class="word">explained,</span> 
+      <span class="word">"It's</span> 
+      <span class="word">made</span> 
+      <span class="word">with</span> 
+      <span class="word">rice,</span> 
+      <span class="word">fish,</span> 
+      <span class="word">and</span> 
+      <span class="word">sometimes</span> 
+      <span class="word">vegetables,</span> 
+      <span class="word">all</span> 
+      <span class="word">wrapped</span> 
+      <span class="word">in</span> 
+      <span class="word">seaweed.</span> 
+      <span class="word">My</span> 
+      <span class="word">mom</span> 
+      <span class="word">taught</span> 
+      <span class="word">me</span> 
+      <span class="word">how</span> 
+      <span class="word">to</span> 
+      <span class="word">make</span> 
+      <span class="word">it.</span> 
+      <span class="word">Would</span> 
+      <span class="word">you</span> 
+      <span class="word">like</span> 
+      <span class="word">to</span> 
+      <span class="word">try</span> 
+      <span class="word">some?"</span>
+    </div>
+    <div class="chinese">Isaka解釋說：「這是用米飯、魚，有時候還有蔬菜，全部用海藻包裹而成。我媽媽教我怎麼做。你想嘗嘗嗎？」</div>
+  </div>
+
+  <!-- Sentence 8 -->
+  <div class="sentence-container" data-text="Thomas hesitated for a moment. \"I've never had sushi before. I'm not sure if I'll like it.\"">
+    <div class="english">
+      <span class="word">Thomas</span> 
+      <span class="word">hesitated</span> 
+      <span class="word">for</span> 
+      <span class="word">a</span> 
+      <span class="word">moment.</span> 
+      <span class="word">"I've</span> 
+      <span class="word">never</span> 
+      <span class="word">had</span> 
+      <span class="word">sushi</span> 
+      <span class="word">before.</span> 
+      <span class="word">I'm</span> 
+      <span class="word">not</span> 
+      <span class="word">sure</span> 
+      <span class="word">if</span> 
+      <span class="word">I'll</span> 
+      <span class="word">like</span> 
+      <span class="word">it."</span>
+    </div>
+    <div class="chinese">Thomas猶豫了一會兒：「我從來沒吃過壽司，我不確定我是否會喜歡它。」</div>
+  </div>
+
+  <!-- Sentence 9 -->
+  <div class="sentence-container" data-text="Isaka said, \"That's okay! It's great to try new things, even if they're different. You might like it!\"">
+    <div class="english">
+      <span class="word">Isaka</span> 
+      <span class="word">said,</span> 
+      <span class="word">"That's</span> 
+      <span class="word">okay!</span> 
+      <span class="word">It's</span> 
+      <span class="word">great</span> 
+      <span class="word">to</span> 
+      <span class="word">try</span> 
+      <span class="word">new</span> 
+      <span class="word">things,</span> 
+      <span class="word">even</span> 
+      <span class="word">if</span> 
+      <span class="word">they're</span> 
+      <span class="word">different.</span> 
+      <span class="word">You</span> 
+      <span class="word">might</span> 
+      <span class="word">like</span> 
+      <span class="word">it!"</span>
+    </div>
+    <div class="chinese">Isaka說：「沒關係！嘗試新事物總是好的，即使它們不同，你可能會喜歡的！」</div>
+  </div>
+
+  <!-- Sentence 10 -->
+  <div class="sentence-container" data-text="Thomas smiled and agreed, \"Okay, I'll give it a try!\"">
+    <div class="english">
+      <span class="word">Thomas</span> 
+      <span class="word">smiled</span> 
+      <span class="word">and</span> 
+      <span class="word">agreed,</span> 
+      <span class="word">"Okay,</span> 
+      <span class="word">I'll</span> 
+      <span class="word">give</span> 
+      <span class="word">it</span> 
+      <span class="word">a</span> 
+      <span class="word">try!"</span>
+    </div>
+    <div class="chinese">Thomas微笑著同意道：「好吧，我試試看！」</div>
+  </div>
+
+  <!-- Sentence 11 -->
+  <div class="sentence-container" data-text="After taking a bite, Thomas's face lit up. \"It's really good! It's so fresh and different from what I'm used to, but I like it!\"">
+    <div class="english">
+      <span class="word">After</span> 
+      <span class="word">taking</span> 
+      <span class="word">a</span> 
+      <span class="word">bite,</span> 
+      <span class="word">Thomas's</span> 
+      <span class="word">face</span> 
+      <span class="word">lit</span> 
+      <span class="word">up.</span> 
+      <span class="word">"It's</span> 
+      <span class="word">really</span> 
+      <span class="word">good!</span> 
+      <span class="word">It's</span> 
+      <span class="word">so</span> 
+      <span class="word">fresh</span> 
+      <span class="word">and</span> 
+      <span class="word">different</span> 
+      <span class="word">from</span> 
+      <span class="word">what</span> 
+      <span class="word">I'm</span> 
+      <span class="word">used</span> 
+      <span class="word">to,</span> 
+      <span class="word">but</span> 
+      <span class="word">I</span> 
+      <span class="word">like</span> 
+      <span class="word">it!"</span>
+    </div>
+    <div class="chinese">咬了一口之後，Thomas的臉上綻放出笑容：「真的很好吃！它既新鮮又與我習慣的不同，但我喜歡！」</div>
+  </div>
+
+  <!-- Sentence 12 -->
+  <div class="sentence-container" data-text="Isaka laughed. \"I'm glad! In my culture, food is a way to show love and respect for others. It's fun to share our traditions.\"">
+    <div class="english">
+      <span class="word">Isaka</span> 
+      <span class="word">laughed.</span> 
+      <span class="word">"I'm</span> 
+      <span class="word">glad!</span> 
+      <span class="word">In</span> 
+      <span class="word">my</span> 
+      <span class="word">culture,</span> 
+      <span class="word">food</span> 
+      <span class="word">is</span> 
+      <span class="word">a</span> 
+      <span class="word">way</span> 
+      <span class="word">to</span> 
+      <span class="word">show</span> 
+      <span class="word">love</span> 
+      <span class="word">and</span> 
+      <span class="word">respect</span> 
+      <span class="word">for</span> 
+      <span class="word">others.</span> 
+      <span class="word">It's</span> 
+      <span class="word">fun</span> 
+      <span class="word">to</span> 
+      <span class="word">share</span> 
+      <span class="word">our</span> 
+      <span class="word">traditions."</span>
+    </div>
+    <div class="chinese">Isaka笑了：「我很高興！在我的文化中，食物是表達對他人愛與尊重的一種方式。分享我們的傳統很有趣。」</div>
+  </div>
+
+  <!-- Sentence 13 -->
+  <div class="sentence-container" data-text="Thomas thought for a moment. \"I think it's cool that we all have different foods and traditions. We can learn a lot from each other.\"">
+    <div class="english">
+      <span class="word">Thomas</span> 
+      <span class="word">thought</span> 
+      <span class="word">for</span> 
+      <span class="word">a</span> 
+      <span class="word">moment.</span> 
+      <span class="word">"I</span> 
+      <span class="word">think</span> 
+      <span class="word">it's</span> 
+      <span class="word">cool</span> 
+      <span class="word">that</span> 
+      <span class="word">we</span> 
+      <span class="word">all</span> 
+      <span class="word">have</span> 
+      <span class="word">different</span> 
+      <span class="word">foods</span> 
+      <span class="word">and</span> 
+      <span class="word">traditions.</span> 
+      <span class="word">We</span> 
+      <span class="word">can</span> 
+      <span class="word">learn</span> 
+      <span class="word">a</span> 
+      <span class="word">lot</span> 
+      <span class="word">from</span> 
+      <span class="word">each</span> 
+      <span class="word">other."</span>
+    </div>
+    <div class="chinese">Thomas想了一會兒：「我覺得我們大家都有不同的食物和傳統，這真酷，我們可以互相學習很多東西。」</div>
+  </div>
+
+  <!-- Sentence 14 -->
+  <div class="sentence-container" data-text="Isaka nodded. \"Exactly! That's what makes the world so interesting. We should always respect and appreciate each other's cultures.\"">
+    <div class="english">
+      <span class="word">Isaka</span> 
+      <span class="word">nodded.</span> 
+      <span class="word">"Exactly!</span> 
+      <span class="word">That's</span> 
+      <span class="word">what</span> 
+      <span class="word">makes</span> 
+      <span class="word">the</span> 
+      <span class="word">world</span> 
+      <span class="word">so</span> 
+      <span class="word">interesting.</span> 
+      <span class="word">We</span> 
+      <span class="word">should</span> 
+      <span class="word">always</span> 
+      <span class="word">respect</span> 
+      <span class="word">and</span> 
+      <span class="word">appreciate</span> 
+      <span class="word">each</span> 
+      <span class="word">other's</span> 
+      <span class="word">cultures."</span>
+    </div>
+    <div class="chinese">Isaka點點頭說：「沒錯！這正是讓世界變得如此有趣的原因。我們應該始終尊重並欣賞彼此的文化。」</div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.sentence-container').forEach(container => {
+      container.addEventListener('click', () => {
+        if (speechSynthesis.speaking) {
+          speechSynthesis.cancel();
+        }
+
+        const englishDiv = container.querySelector('.english');
+        const sentenceText = container.getAttribute('data-text');
+        const words = englishDiv.querySelectorAll('.word');
+        const wordCount = words.length;
+
+        const utterance = new SpeechSynthesisUtterance(sentenceText);
+        utterance.rate = 0.3;
+
+        let wordIndex = 0;
+        const totalDuration = (sentenceText.length / 5) * (1 / 0.3) * 1000; // 粗估語音總時長（每5個字符1秒，調整rate）
+        const intervalTime = totalDuration / wordCount; // 每個單字的高亮時間
+
+        const highlightInterval = setInterval(() => {
+          words.forEach((span, i) => {
+            span.style.color = i === wordIndex ? "red" : "black";
+          });
+          wordIndex++;
+          if (wordIndex >= wordCount) {
+            clearInterval(highlightInterval);
+          }
+        }, intervalTime);
+
+        utterance.onend = () => {
+          clearInterval(highlightInterval);
+          words.forEach(span => {
+            span.style.color = "black";
+          });
+        };
+
+        speechSynthesis.speak(utterance);
+      });
+    });
+  </script>
+</body>
+</html>
